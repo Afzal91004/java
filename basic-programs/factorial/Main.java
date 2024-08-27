@@ -24,5 +24,7 @@ public class Main {
         System.out.println("The factorial of " + num + " is: " + factorial);
         System.out.println("Afzal was pleased with his result and felt more confident about his math skills after solving the exercise.");
         System.out.println("His teacher congratulated him and said, 'Great job, Afzal! You've successfully calculated the factorial!'");
+
+        scanner.close();
     }
 }
