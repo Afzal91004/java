@@ -1,6 +1,4 @@
-package vowels-or-consonants;
-
-public import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,7 +42,4 @@ public class Main {
         System.out.println("Afzal had a great time learning about vowels and consonants with Neetu Miss!");
         scanner.close();
     }
-}
- {
-    
 }
