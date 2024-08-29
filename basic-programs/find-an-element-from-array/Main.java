@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] arr;
-        int n, x, option;
+        int n, x, option, index = -1;
 
         // Story introduction
         System.out.println("One sunny day, Afzal was solving a math puzzle given by his teacher, Neetu Miss.");
@@ -30,6 +30,7 @@ public class Main {
         // Get the search option from the user
         System.out.println("Press 0 to find all occurrences of " + x);
         System.out.println("Press 1 to find only the first occurrence of " + x);
+        System.out.println("Press 2 to find only the last occurrence of " + x);
         option = scanner.nextInt();
 
         // Decision-making based on user's choice
@@ -66,8 +67,23 @@ public class Main {
                 }
                 break;
 
+            case 2: // Find only the last occurrence
+                for (int i = 0; i < n; i++) {
+                    if (arr[i] == x) {
+                        index = i; // Update index with the latest occurrence
+                    }
+                }
+                if (index != -1) {
+                    System.out.println(x + " is found at the last occurrence position " + index + " (as per Java indexing).");
+                    System.out.println("Afzal happily announced, 'I found the last occurrence of the number, Neetu Miss!'");
+                } else {
+                    System.out.println(x + " is not found in the array.");
+                    System.out.println("Afzal sighed, 'Looks like the number isn't here, Neetu Miss.'");
+                }
+                break;
+
             default:
-                System.out.println("Invalid entry. Please choose either 0 or 1.");
+                System.out.println("Invalid entry. Please choose either 0, 1, or 2.");
                 System.out.println("Afzal frowned, realizing he had made a mistake in the input.");
                 break;
         }
