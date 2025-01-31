@@ -1,6 +1,5 @@
-package Abstraction;
 class Person {
-    private String name;
+    String name;
     private int age;
 
     Person(String name, int age){
