@@ -12,6 +12,22 @@ It initializes an array, increments the first element by 10, and prints the resu
 - **Space Complexity:** O(1) → The program uses a fixed amount of space (4 bytes for `num`),  
   independent of the input size.
 
+  ### Time and Space Complexity Graph
+```ascii
+Operations │
+           │
+     4     │
+           │
+     3     │────────────────────────── Time Complexity
+           │────────────────────────── Space Complexity
+     2     │
+           │
+     1     │
+           │
+     0     └─────────────────────────────────
+           0    10²   10⁴   10⁶   10⁸   Input Size (n)
+```
+
 ### Explanation
 
 - Even if the array contains **1 million elements**, only the **first indexed element** is accessed.
