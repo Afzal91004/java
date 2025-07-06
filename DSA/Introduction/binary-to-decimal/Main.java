@@ -18,18 +18,16 @@ public class Main {
         int decimalValue = 0;
         int length = bin.length();
 
-        for(int i = 1; i<length; i++){
+        for(int i = 0; i<length; i++){
             char bit = bin.charAt(length - 1 - i);
             // System.out.println(bit);
             if(bit == '1'){
                 decimalValue += Math.pow(2, i);
-            } else if (bit != '0') {
-                System.out.println("Invalid binary number.");
-                return;
-            }
+            } 
         }
 
         System.out.println("Decimal value: " + decimalValue);
 
+       sc.close();
     }
 }
