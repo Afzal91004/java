@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Story introduction
-        System.out.println("One day, Afzal was given a task by his friend Maria. She asked him to create a matrix for a school project.");
+        System.out.println("One day, Afzal was given a task by his friend Shadab. He asked him to create a matrix for a school project.");
         System.out.println("Afzal, being the math enthusiast, decided to take on the challenge and write a program to input the matrix.");
         System.out.println("Let's help Afzal create the matrix!");
 
@@ -38,7 +38,7 @@ public class Main {
         }
 
         // Ending the story
-        System.out.println("Maria looked at the matrix and smiled. 'Great job, Afzal! You did it perfectly!'");
+        System.out.println("Shadab looked at the matrix and smiled. 'Great job, Afzal! You did it perfectly!'");
         scanner.close();
     }
 }
