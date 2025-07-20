@@ -2,21 +2,17 @@ import java.util.Scanner;
 
 public class OddEven {
     public static void main(String[] args) {
-        System.out.println("Odd or Even using bitwise operator");
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
+        System.out.println("******************Even or Odd Checker******************");
+        System.out.print("Enter a number to check if it is even or odd: ");
         int number = sc.nextInt();
-
-        if(number < 0) {
-            System.out.println("Please enter a non-negative integer.");
+        
+        // Using bitwise AND operator to check if the number is even or odd
+        if((number & 1) == 1) {
+            System.out.println(number + " is an Odd number.");
         } else {
-            if ((number & 1) == 1) {
-                System.out.println("The number " + number + " is Odd.");
-            } else {
-                System.out.println("The number " + number + " is Even.");
-            }
+            System.out.println(number + " is an Even number.");
         }
-
         sc.close();
     }
 }
