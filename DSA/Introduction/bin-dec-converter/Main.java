@@ -39,7 +39,8 @@ class Converter {
         
        while(binary != 0) {
         int lastBit = binary % 10;
-        decimal += lastBit*(1 >> index);
+        decimal += lastBit*(1 << index);
+        binary /= 10;
         index++;
        }
        return decimal;
