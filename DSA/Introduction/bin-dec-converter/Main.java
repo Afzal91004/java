@@ -34,17 +34,15 @@ public class Main {
 
 class Converter {
     public int toDecimal(int binary) {
-        int decimal = 0;
-        int index = 0;
-
-        while (binary != 0) {
-            int lastDigit = binary % 10;
-            decimal += lastDigit * (1 << index);
-            binary /= 10;
-            index++;
-        }
-
-        return decimal;
+       int decimal = 0;
+       int index = 0;
+        
+       while(binary != 0) {
+        int lastBit = binary % 10;
+        decimal += lastBit*(1 >> index);
+        index++;
+       }
+       return decimal;
     }
 
 
