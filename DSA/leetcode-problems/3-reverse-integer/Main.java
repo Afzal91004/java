@@ -14,7 +14,7 @@ public class Main {
         while (x != 0) {
             int lastDigit = x % 10;
 
-            // 🔸 Check for overflow before multiplication
+            // Check for overflow before multiplication
             if (result < Integer.MIN_VALUE / 10 || result > Integer.MAX_VALUE / 10) {
                 System.out.println("Error: Reversed number goes out of 32-bit int range!");
                 return;
