@@ -13,7 +13,7 @@ class Main {
             int num = i;
 
             while(num != 0) {
-                if((num & 1) == 1)
+                if((num & 1) == 1) //(num & 1) -----> last bit
                     count++;
                 num = num >> 1;
             }

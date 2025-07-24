@@ -8,13 +8,15 @@ public class Main {
         System.out.print("Enter a decimal number: ");
 
         int decNum = sc.nextInt();
+        int num = decNum;
         String res = "";
 
-        while(decNum > 0){
-            int bin = decNum % 2;
-            decNum = decNum / 2;
+        while(num > 0){
+            int bin = num % 2;
+            num = num / 2;
             res = bin + res;
         } 
-        System.out.println("decimal("+decNum+") = binary("+res+") ");
+        System.out.println("decimal("+ decNum +") = binary("+res+") ");
+
     }
 }

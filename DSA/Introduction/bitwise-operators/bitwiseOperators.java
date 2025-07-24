@@ -10,6 +10,9 @@ public class bitwiseOperators {
         System.out.println("Bitwise AND (a & b): " + a + " & "+ b + " = " + (a & b) + " (binary: " + Integer.toBinaryString(a & b) + ")");
         System.out.println("Bitwise OR (a | b): " + a + " | " + b + " = " +  (a | b) + " (binary: " + Integer.toBinaryString(a | b) + ")");
         System.out.println("Bitwise XOR (a ^ b): " + a + " ^ " + b + " = " +  (a ^ b) + " (binary: " + Integer.toBinaryString(a ^ b) + ")");
-        System.out.println("Bitwise NOT (~a): ~" + a +" = " + (~a) + " (binary: " + Integer.toBinaryString(~a) + ")  <---2's complement representation");
+        System.out.println("Bitwise NOT (~a): ~" + a +" = " + (~a) + " (binary: " + Integer.toBinaryString(~a) + ")" );
+
+        System.out.println("Left Shift (a << 1): " + a + " << 1 = " + (a << 1) + " (binary: " + Integer.toBinaryString(a << 1) + ")");
+        System.out.println("Right Shift (a >> 1): " + a + " >> 1 = " + (a >> 1) + " (binary: " + Integer.toBinaryString(b >> 1)+ ")");
     }
 }
