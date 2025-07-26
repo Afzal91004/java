@@ -12,7 +12,7 @@ public class Main {
             return;
         }
 
-        // copy original number for display
+        // copy original number
         int original = x;
 
         // Create mask of same length as binary form of x
