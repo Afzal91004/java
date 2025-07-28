@@ -26,9 +26,11 @@ public class Main {
         return count;
     }
 
-    public static boolean isPrime(int num) {
-        for (int i = 2; i <= (int)Math.sqrt(num); i++) {
-            if (num % i == 0) return false;
+    public static boolean isPrime(int i) {
+        for (int j= 2; j <= (int)Math.sqrt(i); j++) {
+            if (i % j == 0) {
+                return false;
+            }
         }
         return true;
     }
