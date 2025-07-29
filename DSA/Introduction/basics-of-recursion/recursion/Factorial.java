@@ -10,7 +10,11 @@ public class Factorial {
         while(true) {
             System.out.print("Enter a number to calculate its factorial (or -1 to exit): ");
             num = sc.nextInt();
-            if(num >= 0) {
+            if(num == -1) {
+                System.out.println("Exiting the program. Goodbye!");
+                sc.close();
+                return;
+            } else if(num >= 0) {
                 break;
             }
             System.out.println("Factorial is not defined for negative numbers. \nPlease enter a non-negative integer.");
