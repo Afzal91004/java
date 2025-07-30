@@ -5,11 +5,11 @@ public class XPowerN {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Take base input
+        // Take base input from user
         System.out.print("Enter base number (x): ");
         int x = sc.nextInt();
 
-        // Take exponent input
+        // Take exponent input from user
         System.out.print("Enter power: ");
         int power = sc.nextInt();
 
